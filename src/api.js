@@ -9,9 +9,10 @@ router.get("/", (req, res) => {
     hello: "hi!"
   });
 });
+
 router.post("/", (req, res) => {
   console.log("for submit works")
-  res.json({
+  res.status(200).json({
     hello: "hi!"
   });
 });
