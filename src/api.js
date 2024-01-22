@@ -9,6 +9,12 @@ router.get("/", (req, res) => {
     hello: "hi!"
   });
 });
+router.post("/", (req, res) => {
+  console.log("for submit works")
+  res.json({
+    hello: "hi!"
+  });
+});
 
 app.use(`/.netlify/functions/api`, router);
 
