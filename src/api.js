@@ -6,7 +6,7 @@ const router = express.Router();
 app.use(cors())
 
 router.get("/", (req, res) => {
-  res.status(200).json({
+  res.json({
     cookie: "Chocolate Chip Cookie"
   });
 });
