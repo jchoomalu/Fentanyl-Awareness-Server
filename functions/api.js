@@ -20160,7 +20160,7 @@ const app = express();
 const router = express.Router();
 router.get("/", (req, res) => {
   res.json({
-    hello: "hi!"
+    cookie: "Chocolate Chip Cookie"
   });
 });
 app.use(`/.netlify/functions/api`, router);

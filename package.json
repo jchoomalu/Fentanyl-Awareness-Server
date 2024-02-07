@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "node": "16.0.0",
+    "dotenv": "^16.3.2",
     "express": "^4.16.4",
+    "mongoose": "^8.1.0",
     "netlify-lambda": "^1.4.3",
+    "node": "16.0.0",
     "serverless-http": "^1.9.1"
   },
-  "devDependencies": {},
   "scripts": {
     "start": "NODE_ENV=development ./node_modules/.bin/netlify-lambda serve src",
     "build": "NODE_ENV=production ./node_modules/.bin/netlify-lambda build src"
