@@ -4,7 +4,7 @@ const app = express();
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  res.send({
+  res.status(200).json({
     cookie: "Chocolate Chip Cookie"
   });
 });
